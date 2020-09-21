@@ -49,3 +49,27 @@ Ergovore' > magnezone
 cd ..
 
 
+#2
+chmod a+rwx,u-r,o-w dusknoir3/marowak
+chmod u=rwx,g=r-x,o=-wx dusknoir3/sealeo
+chmod 355 dusknoir3/krokorok
+chmod 315 dusknoir3
+
+chmod a-rwx,u+rw,g+w lilligant1
+
+chmod 404 musharna3/petilil
+chmod 551 musharna3/luxio
+chmod 404 musharna3/lopunny
+chmod a+rwx,g-r,o-r musharna3/gyarados
+chmod u=---,g=r--,o=rw- musharna3/primeape
+chmod 751 musharna3
+
+chmod u=rw-,g=---,o=--- omanyte0
+chmod u=r--,g=---,o=r-- sandshrew8
+
+chmod u=r--,g=r--,o=--- skiploom7/kabutops
+chmod a-rwx,g+r,o+r skiploom7/staryu
+chmod 006 skiploom7/gothitelle
+chmod u=---,g=r--,o=rw- skiploom7/magnezone
+chmod a+wx-r skiploom7
+
