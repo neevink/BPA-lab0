@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#REMOVING OLD VERSION OF PROJECT
+chmod -R 777 lab0
+rm -R lab0
+
 # 1
 mkdir lab0
 cd lab0
@@ -73,3 +77,29 @@ chmod 006 skiploom7/gothitelle
 chmod u=---,g=r--,o=rw- skiploom7/magnezone
 chmod a+wx-r skiploom7
 
+
+#3
+cd ..
+ln -s ../omanyte0 lab0/skiploom7/magnezoneomanyte
+
+chmod u+r lab0/skiploom7/ #Добавил права на чтение директории skiploom7 и некоторых файлов в ней
+chmod u+r lab0/skiploom7/gothitelle
+chmod u+r lab0/skiploom7/magnezone
+chmod u+r lab0/skiploom7/staryu
+
+cp -R lab0/skiploom7/ lab0/musharna3/gyarados/ #При копировании ссылки magnezoneomanyte, вместо ссылки в директорию скопировался файл, на который указывала ссылка
+
+cat lab0/lilligant1 > lab0/skiploom7/kabutopslilligant
+ln -s skiploom7 lab0/Copy_31
+
+cp lab0/omanyte0  lab0/dusknoir3/sealeo/
+ln lab0/lilligant1 lab0/musharna3/petilillilligant
+
+cat lab0/skiploom7/magnezone lab0/musharna3/petilil > lab0/sandshrew8_86
+
+chmod u-r lab0/skiploom7/gothitelle #Вернул всё на место
+chmod u-r lab0/skiploom7/magnezone
+chmod u-r lab0/skiploom7/staryu
+chmod u-r lab0/skiploom7/
+
+#4
