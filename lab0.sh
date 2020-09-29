@@ -110,7 +110,7 @@ cat lab0/s* lab0/*/s* lab0/*/*/s* lab0/*/*/*/s* 2> /tmp/s313087-lab0.txt | sort 
 
 grep -h 'Me' lab0/musharna3/lopunny lab0/musharna3/primeape lab0/skiploom7/kabutops lab0/skiploom7/staryu 2>&1
 
-#5
+#5 пункт
 
 rm lab0/omanyte0
 
