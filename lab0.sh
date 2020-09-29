@@ -1,11 +1,6 @@
 #!/bin/bash
 
-#REMOVING OLD VERSION OF PROJECT
-chmod -R 777 lab0
-rm -R lab0
-#rm /tmp/s313087-lab0.txt
-
-# 1
+# 1 пункт
 mkdir lab0
 cd lab0
 
@@ -54,7 +49,7 @@ Ergovore' > magnezone
 cd ..
 
 
-#2
+#2 пункт
 chmod a+rwx,u-r,o-w dusknoir3/marowak
 chmod u=rwx,g=r-x,o=-wx dusknoir3/sealeo
 chmod 355 dusknoir3/krokorok
@@ -78,17 +73,16 @@ chmod 006 skiploom7/gothitelle
 chmod u=---,g=r--,o=rw- skiploom7/magnezone
 chmod a+wx-r skiploom7
 
-
-#3
+#3 пункт
 cd ..
 ln -s ../omanyte0 lab0/skiploom7/magnezoneomanyte
 
-chmod u+r lab0/skiploom7/ #Добавил права на чтение директории skiploom7 и некоторых файлов в ней
+chmod u+r lab0/skiploom7/ # Добавил права на чтение директории skiploom7 и некоторых файлов в ней
 chmod u+r lab0/skiploom7/gothitelle
 chmod u+r lab0/skiploom7/magnezone
 chmod u+r lab0/skiploom7/staryu
 
-cp -R lab0/skiploom7/ lab0/musharna3/gyarados/ #При копировании ссылки magnezoneomanyte, вместо ссылки в директорию скопировался файл, на который указывала ссылка
+cp -R lab0/skiploom7/ lab0/musharna3/gyarados/
 
 cat lab0/lilligant1 > lab0/skiploom7/kabutopslilligant
 ln -s skiploom7 lab0/Copy_31
@@ -98,41 +92,37 @@ ln lab0/lilligant1 lab0/musharna3/petilillilligant
 
 cat lab0/skiploom7/magnezone lab0/musharna3/petilil > lab0/sandshrew8_86
 
-chmod u-r lab0/skiploom7/gothitelle #Вернул всё на место
+chmod u-r lab0/skiploom7/gothitelle # Вернул все права на место
 chmod u-r lab0/skiploom7/magnezone
 chmod u-r lab0/skiploom7/staryu
 chmod u-r lab0/skiploom7/
 
-#4
-#chmod u+r lab0/dusknoir3/
-#cat lab0/dusknoir3/* | wc -l 1> /tmp/s313087-lab0.txt #Ошибка доступа, нельзя читать каталог dusknoir3/
+#4 пункт
+cat lab0/dusknoir3/* | wc -l 1> /tmp/s313087-lab0.txt
 
-#chmod -R 777 lab0/
-#mkdir lab0/dusknoir3/krokorok/123
-#ls -Rl lab0/ 2> /tmp/s313087-lab0.txt | grep k$ | sort -rk2 | head -4
+ls -Rl lab0/ 2> /tmp/s313087-lab0.txt | grep k$ | sort -rk2 | head -4
 
-#тут доступ к нужному файлу закрыт, поэтому ничего не выведится 
-#cat lab0/musharna3/petilil lab0/musharna3/lopunny lab0/musharna3/primeape 2> /tmp/s313087-lab0.txt | grep -i 'Pla'
+cat lab0/musharna3/petilil lab0/musharna3/lopunny lab0/musharna3/primeape 2> /tmp/s313087-lab0.txt | grep -i 'Pla'
 
-#echo 'aaa' > lab0/ooo
-#echo 'cbc' > lab0/o4o
-#echo 'abb' > lab0/o7o
-#echo 'ccc' > lab0/o5o
-#echo 'aab' > lab0/o6o
-#cat lab0/*o lab0/*/*o lab0/*/*/*o lab0/*/*/*/*o 2> /dev/null | sort -r
+cat lab0/*o lab0/*/*o lab0/*/*/*o lab0/*/*/*/*o 2> /dev/null | sort -r
 
-#chmod -R 700 lab0/
-#cat lab0/s* lab0/*/s* lab0/*/*/s* lab0/*/*/*/s* 2> /tmp/s313087-lab0.txt | sort -r | grep -n '^'
+cat lab0/s* lab0/*/s* lab0/*/*/s* lab0/*/*/*/s* 2> /tmp/s313087-lab0.txt | sort -r | grep -n '^'
 
-#ошибка доступа
-#chmod 700 lab0/musharna3/lopunny lab0/musharna3/primeape lab0/skiploom7/kabutops lab0/skiploom7/staryu
-#grep -h 'Me' lab0/musharna3/lopunny lab0/musharna3/primeape lab0/skiploom7/kabutops lab0/skiploom7/staryu 2>&1
+grep -h 'Me' lab0/musharna3/lopunny lab0/musharna3/primeape lab0/skiploom7/kabutops lab0/skiploom7/staryu 2>&1
 
 #5
 
-#rm lab0/omanyte0
-#rm lab0/musharna3/lopunny #cant write lopunny
-#rm lab0/Copy_*
-#rm lab0/musharna3/petilillilliga*
-#rm -r lab0/dusknoir3 # не хватает прав на удаление
-#rm -r lab0/dusknoir3/krokorok # та же фигня
+rm lab0/omanyte0
+
+rm lab0/musharna3/lopunny
+
+rm lab0/Copy_*
+
+rm lab0/musharna3/petilillilliga*
+
+rmdir lab0/dusknoir3/krokorok
+rmdir lab0/dusknoir3/marowak
+rm -R lab0/dusknoir3/sealeo
+rmdir lab0/dusknoir3
+
+rm -r lab0/dusknoir3/krokorok
