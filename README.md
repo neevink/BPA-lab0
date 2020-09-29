@@ -1,2 +1,0 @@
-# BasicsOfProfessionalActivity
- Основы профессиональной деятельности
