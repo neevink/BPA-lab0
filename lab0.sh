@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#REMOVING OLD VERSION OF PROJECT
+chmod -R 700 lab0
+rm -R lab0
+
+
 # 1 пункт
 mkdir lab0
 cd lab0
@@ -15,35 +20,22 @@ echo -e 'Ходы After You Covet Giga Drain Growthf Heal Bell Helping\nHandLeec
 
 mkdir musharna3
 cd musharna3
-echo 'Возможности Overland=6 Surface=4
-Jump=2 Power=l Intelligence=4 Sprouter=0' > petilil
+echo -e 'Возможности Overland=6 Surface=4\nJump=2 Power=l Intelligence=4 Sprouter=0' > petilil
 mkdir luxio
-echo 'Способности Last
-Chance Cute Charm Klutz' > lopunny
+echo -e 'Способности Last\nChance Cute Charm Klutz' > lopunny
 mkdir gyarados
-echo 'Ходы Body Slam Covet Defense Curl
-Double-Edge Dual Chop Dynamicpunch Endeavor Fling‡ Fire Punch Focus
-Punch Gunk Shot Helping Hand Ice Punch Iron Tail Low Kick Magic Coat
-Mega Kick Mega Punch Metronome Mud-Slap Outrage Psych Up Role Play
-Seed Bomb Sleep Talk Snore Spite Swift Thunderpunch Uproar Vacuum
-Wave' > primeape
+echo -e 'Ходы Body Slam Covet Defense Curl\nDouble-Edge Dual Chop Dynamicpunch Endeavor Fling‡ Fire Punch Focus\nPunch Gunk Shot Helping Hand Ice Punch Iron Tail Low Kick Magic Coat\nMega Kick Mega Punch Metronome Mud-Slap Outrage Psych Up Role Play\nSeed Bomb Sleep Talk Snore Spite Swift Thunderpunch Uproar Vacuum\nWave' > primeape
 cd ..
 
-echo 'Ходы Ancientpower Bind Body Slam Dive Double-Edge
-Earth Power Icy Wind Iron Defense Knock Off Rollout Sleep Talk Snore
-Stealth Rock' > omanyte0
-
-echo 'Способности Landslide Sand Veil
-Pickup' > sandshrew8
+echo -e 'Ходы Ancientpower Bind Body Slam Dive Double-Edge\nEarth Power Icy Wind Iron Defense Knock Off Rollout Sleep Talk Snore\nStealth Rock' > omanyte0
+echo -e 'Способности Landslide Sand Veil\nPickup' > sandshrew8
 
 mkdir skiploom7
 cd skiploom7
-echo 'weigth=89.3 height=51.0 atk=12 def=11' > kabutops
-echo 'Живет
-Ocean' > staryu
+echo -e 'weigth=89.3 height=51.0 atk=12 def=11' > kabutops
+echo -e 'Живет\nOcean' > staryu
 echo 'satk=10 sdef=11 spd=7' > gothitelle
-echo 'Тип диеты
-Ergovore' > magnezone
+echo -e 'Тип диеты\nErgovore' > magnezone
 cd ..
 
 
@@ -71,6 +63,7 @@ chmod 006 skiploom7/gothitelle
 chmod u=---,g=r--,o=rw- skiploom7/magnezone
 chmod a+wx-r skiploom7
 
+
 #3 пункт
 cd ..
 ln -s ../omanyte0 lab0/skiploom7/magnezoneomanyte
@@ -95,6 +88,7 @@ chmod u-r lab0/skiploom7/magnezone
 chmod u-r lab0/skiploom7/staryu
 chmod u-r lab0/skiploom7/
 
+
 #4 пункт
 cat lab0/dusknoir3/* | wc -l 1> /tmp/s313087-lab0.txt
 
@@ -108,8 +102,8 @@ cat lab0/s* lab0/*/s* lab0/*/*/s* lab0/*/*/*/s* 2> /tmp/s313087-lab0.txt | sort 
 
 grep -h 'Me' lab0/musharna3/lopunny lab0/musharna3/primeape lab0/skiploom7/kabutops lab0/skiploom7/staryu 2>&1
 
-#5 пункт
 
+#5 пункт
 rm lab0/omanyte0
 
 rm lab0/musharna3/lopunny
