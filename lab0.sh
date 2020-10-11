@@ -11,9 +11,7 @@ mkdir sealeo
 mkdir krokorok
 cd ..
 
-echo 'Ходы After You Covet Giga Drain Growthf Heal Bell Helping
-HandLeech Seed‡ Mega Drain‡ Role Play Seed bomb Sleep Talk Snore
-Synthesis‡ Worry Seed' > lilligant1
+echo -e 'Ходы After You Covet Giga Drain Growthf Heal Bell Helping\nHandLeech Seed‡ Mega Drain‡ Role Play Seed bomb Sleep Talk Snore\nSynthesis‡ Worry Seed' > lilligant1
 
 mkdir musharna3
 cd musharna3
